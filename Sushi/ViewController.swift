@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         // Add the header
         request.setValue(self.token!, forHTTPHeaderField: "harrytoken")
         // Debug header so we don't reset the timer every time
-        request.setValue("true", forHTTPHeaderField: "debug")
+        //request.setValue("true", forHTTPHeaderField: "debug")
         
         // Make the call
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
