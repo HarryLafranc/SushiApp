@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet weak var labelFeedback: UILabel!
     
+    var token:String? = nil
     let url = URL(string: "https://sushi.cest.party/update")
     
     @IBAction func clickUpdateButton(_ sender: UIButton) {
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         var request = URLRequest(url: url!)
         // Add the header
-        request.setValue("4999f3aab0b120ad5cfad6c44e8cdbdaddadee69ec3b6939b42963d85a57538e", forHTTPHeaderField: "harrytoken")
+        request.setValue(self.token!, forHTTPHeaderField: "harrytoken")
         // Debug header so we don't reset the timer every time
         request.setValue("true", forHTTPHeaderField: "debug")
         
@@ -43,15 +43,31 @@ class ViewController: UIViewController {
             }
             
             // Aaaand proccessing part
+            // Maybe I could do a case here ?
             let result = String(data: data, encoding: .utf8)
-            print("Result -- ", result!)
-            print("Response -- ", response!)
+            
+            DispatchQueue.main.async {
+                if result == "success" {
+                    self.labelFeedback.text = "Timer updated !"
+                }
+                if result == "forbidden" {
+                    self.labelFeedback.text = "Forbidden error"
+                }
+                if result == "error" {
+                    self.labelFeedback.text = "Node error"
+                }
+            }
         }
         
         task.resume()
     }
     
     override func viewDidLoad() {
+        // Reading the config (just a simple plist with a dictionnary)
+        let path = Bundle.main.path(forResource: "Config", ofType: "plist")
+        let dic = NSDictionary(contentsOfFile: path!)
+        
+        self.token = dic?["token"] as! String?
         super.viewDidLoad()
     }
 

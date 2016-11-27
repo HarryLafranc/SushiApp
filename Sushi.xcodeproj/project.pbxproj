@@ -10,6 +10,7 @@
 		50AB83221DEA362200C98F7E /* bamboo-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50AB83211DEA362200C98F7E /* bamboo-background.jpg */; };
 		50AB83261DEA3D4700C98F7E /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 50AB83251DEA3D4700C98F7E /* button.png */; };
 		50AB83281DEA412700C98F7E /* button_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 50AB83271DEA412700C98F7E /* button_hover.png */; };
+		50AB832C1DEA654200C98F7E /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50AB832B1DEA654200C98F7E /* Config.plist */; };
 		50D47A4F1DEA2DB500129AE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D47A4E1DEA2DB500129AE5 /* AppDelegate.swift */; };
 		50D47A511DEA2DB500129AE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D47A501DEA2DB500129AE5 /* ViewController.swift */; };
 		50D47A541DEA2DB500129AE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50D47A521DEA2DB500129AE5 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		50AB83211DEA362200C98F7E /* bamboo-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bamboo-background.jpg"; sourceTree = "<group>"; };
 		50AB83251DEA3D4700C98F7E /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		50AB83271DEA412700C98F7E /* button_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_hover.png; sourceTree = "<group>"; };
+		50AB832B1DEA654200C98F7E /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		50D47A4B1DEA2DB500129AE5 /* Sushi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sushi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D47A4E1DEA2DB500129AE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50D47A501DEA2DB500129AE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				50AB831E1DEA35E500C98F7E /* img */,
 				50D47A4E1DEA2DB500129AE5 /* AppDelegate.swift */,
 				50D47A501DEA2DB500129AE5 /* ViewController.swift */,
+				50AB832B1DEA654200C98F7E /* Config.plist */,
 				50D47A521DEA2DB500129AE5 /* Main.storyboard */,
 				50D47A551DEA2DB500129AE5 /* Assets.xcassets */,
 				50D47A571DEA2DB500129AE5 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				50AB83261DEA3D4700C98F7E /* button.png in Resources */,
 				50AB83281DEA412700C98F7E /* button_hover.png in Resources */,
 				50AB83221DEA362200C98F7E /* bamboo-background.jpg in Resources */,
+				50AB832C1DEA654200C98F7E /* Config.plist in Resources */,
 				50D47A561DEA2DB500129AE5 /* Assets.xcassets in Resources */,
 				50D47A541DEA2DB500129AE5 /* Main.storyboard in Resources */,
 			);
